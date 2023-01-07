@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Get live details of current stocks in the market"
+    />
+    <meta name="description" content="Stocks" />
+    <meta name="description" content="Live stocks" />
+    <meta name="description" content="Stocks patterns." />
+    <!-- adding html refresh tag -->
+    <meta http-equiv="refresh" content="5">
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Poppins"
+    />
+    <title>Live stocks details with patterns</title>
+    <!-- internal css -->
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: "poppins";
+        background-color: rgb(255, 251, 253);
+      }
+      header {
+        width: 100%;
+        height: 3rem;
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+      .websiteName {
+        background-color: rgb(255, 255, 255);
+        font-weight: 600;
+        margin-left: 1rem;
+      }
+      .intervalContainer {
+        background-color: #7278fa;
+        color: white;
+        font-size: medium;
+        width: 100%;
+        margin-bottom: 1rem;
+        height: 1.8rem;
+      }
+      .cardContainer {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-around;
+
+        width: 100%;
+        margin: 0;
+      }
+      .intervalText {
+        margin-left: 1rem;
+        padding: 0.1rem;
+      }
+      .card {
+        margin: 1rem;
+        width: 16rem;
+        height: 10rem;
+        font-size: medium;
+        border-radius: 1.3rem;
+        padding: 1rem;
+        position: relative;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+          0 6px 20px 0 rgba(0, 0, 0, 0.19);
+      }
+      .cardTitle {
+        position: absolute;
+        top: 0.7rem;
+        font-size: x-large;
+        font-weight: 650;
+      }
+      .cardBranch {
+        position: absolute;
+        padding: 0.1rem;
+        top: 2.2rem;
+        font-size: large;
+      }
+      .cardTime {
+        position: absolute;
+        padding: 0.1rem;
+        bottom: 4rem;
+        font-size: medium;
+      }
+      .cardDate {
+        position: absolute;
+        padding: 0.1rem;
+        bottom: 2.5rem;
+        font-size: medium;
+      }
+      
+      .cardPattern {
+        position: absolute;
+        bottom: 1rem;
+        padding: 0.1rem;
+        font-size: medium;
+      }
+
+      
+      footer {
+        background-color: #7278fa;
+        height: 5.5rem;
+        padding-top: 0.5rem;
+        margin: 0;
+        position: relative;
+        margin-top: 2rem;
+        font-size: x-small;
+        text-align: center;
+      }
+
+      .footerEnd {
+        background-color: #4f57fcea;
+        height: 1.8rem;
+        position: absolute;
+        bottom: 0;
+        margin: 0;
+        width: 100%;
+        text-align: center;
+      }
+      .footerEnd p {
+        position: absolute;
+        width: 100%;
+        text-align: center;
+      }
+      /* for mobile phones------- */
+      @media only screen and (max-width: 600px) {
+        .card {
+          height: 8.5rem;
+        }
+        .cardTitle {
+          top: 0.7rem;
+        }
+      }
+      @media only screen and (min-width: 600px) {
+        .cardContainer {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          justify-content: space-between;
+        }
+      }
+    </style>
+    <!-- internal css end here -->
+  </head>
+  <body>
+    <!-- This is the header of the website -->
+    <header>
+      <div class="websiteName">WebsiteName</div>
+    </header>
+    <!-- header ends here---------------->
+
+    <!-- Interval display container  -->
+    <div class="intervalContainer">
+      <div class="intervalText">5 min interval</div>
+    </div>
+
+    <!-- Starting of card container for 5min interval -->
+    <div class="cardContainer">
+      <!-- Starting of card -->
+      <div class="card" style="background-color: #fa7575e7">
+       <div class="cardTitle">ONGC</div>
+        <div class="cardBranch">NSE</div>
+        <div class="cardTime">Time: 10am</div>
+        <div class="cardDate">Date: Bilateral</div>
+        <div class="cardPattern">Pattern: 10am</div>
+      </div>
+      <!-- ending of card -->
+
+      <div class="card" style="background-color: #53bf9d">
+        <div class="cardTitle">ONGC</div>
+        <div class="cardBranch">NSE</div>
+        <div class="cardTime">Time: 10am</div>
+        <div class="cardDate">Date: Bilateral</div>
+        <div class="cardPattern">Pattern: 10am</div>
+      </div>
+
+      <!-- ending of card -->
+      <div class="card" style="background-color: #54a3d4">
+        <div class="cardTitle">ONGC</div>
+        <div class="cardBranch">NSE</div>
+        <div class="cardTime">Time: 10am</div>
+        <div class="cardDate">Date: Bilateral</div>
+        <div class="cardPattern">Pattern: 10am</div>
+      </div>
+      <!-- ending of card -->
+      <div class="card" style="background-color: #54a3d4">
+       <div class="cardTitle">ONGC</div>
+        <div class="cardBranch">NSE</div>
+        <div class="cardTime">Time: 10am</div>
+        <div class="cardDate">Date: Bilateral</div>
+        <div class="cardPattern">Pattern: 10am</div> 
+      </div>
+      <!-- ending of card -->
+    </div>
+
+    <!-- Interval display container  -->
+    <div class="intervalContainer">
+      <div class="intervalText">15 min interval</div>
+    </div>
+
+    <!-- Starting of card container for 5min interval -->
+    <div class="cardContainer">
+      <!-- Starting of card -->
+      <div class="card" style="background-color: #ffa47de7">
+        <div class="cardTitle">ONGC</div>
+        <div class="cardBranch">NSE</div>
+        <div class="cardTime">Time: 10am</div>
+        <div class="cardDate">Date: Bilateral</div>
+        <div class="cardPattern">Pattern: 10am</div>
+      </div>
+      <!-- ending of card -->
+
+      <div class="card" style="background-color: #53bf9d">
+        <div class="cardTitle">ONGC</div>
+        <div class="cardBranch">NSE</div>
+        <div class="cardTime">Time: 10am</div>
+        <div class="cardDate">Date: Bilateral</div>
+        <div class="cardPattern">Pattern: 10am</div>
+      </div>
+
+      <!-- ending of card -->
+      <div class="card" style="background-color: #54a3d4">
+       <div class="cardTitle">ONGC</div>
+        <div class="cardBranch">NSE</div>
+        <div class="cardTime">Time: 10am</div>
+        <div class="cardDate">Date: Bilateral</div>
+        <div class="cardPattern">Pattern: 10am</div> 
+      </div>
+      <!-- ending of card -->
+      <div class="card" style="background-color: #54a3d4">
+        <div class="cardTitle">ONGC</div>
+        <div class="cardBranch">NSE</div>
+        <div class="cardTime">Time: 10am</div>
+        <div class="cardDate">Date: Bilateral</div>
+        <div class="cardPattern">Pattern: 10am</div>
+      </div>
+      <!-- ending of card -->
+    </div>
+
+    <footer>
+      Share Market Today - Stock Market and Share Market Live Updates: Get all
+      the latest share market and India stock market news and updates in this
+      site.
+      <div class="footerEnd">
+        <p>© 2023 YourWebsiteName. All rights reserved.</p>
+      </div>
+    </footer>
+  </body>
+</html>
